@@ -1,0 +1,15 @@
+.header {
+	color: navy;
+	font-style: bold;
+}
+
+#list1{
+	color: red;
+}
+
+#list2{
+	color: purple;
+}
+body{
+	background-color: lightblue;
+}

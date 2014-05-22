@@ -1,0 +1,25 @@
+section {
+  float: left;
+  border: 2px solid black;
+  margin: 0 1.5%;
+  height: 80%;
+  padding: 3px;
+  width: 60%;
+}
+aside {
+  float: right;
+  border: 2px dashed black;
+  margin: 0 1.5%;
+  height: 80%;
+  padding: 3px;
+  width: 30%;
+}
+
+footer {
+  clear: both;
+  margin: 0 1.5%;
+}
+
+body {
+	background-color: lightblue;
+}

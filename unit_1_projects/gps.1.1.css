@@ -1,0 +1,44 @@
+
+        body{
+            margin: 10%;
+        }   
+        body, header, section, footer{
+            width: 90%;
+            border-radius: 5px;
+            height: 90px;
+            margin: 3% 2% 3% 5%;
+
+        }
+        header {
+            background-color: #CCFFFF;
+            
+        }
+        section{
+            background-color: blue;
+            height: 450px;
+           
+        }
+        footer{
+            background-color: #99CCFF;
+            height: 40px;
+            padding: 1px;
+            
+        }
+        
+      li{
+      color:white;
+      }
+      p{
+          color: white;
+          margin-left: 3%;
+      }
+      h1, h5{
+          text-align: center;
+      }
+      h2{
+          margin: 3%;
+      }
+      #down{
+         padding
+      }
+      
