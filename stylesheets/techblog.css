@@ -1,4 +1,46 @@
 body{
 	background-color: lightblue;
-	font-family: sans-serif;
+	font-family: Helvetica, sans-serif;
+
+}
+
+header, footer{
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+	margin: 2%;
+	padding-left: 5px;
+	width: 95%;
+	float: left;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  margin: 0 10px;
+  padding: 5px 10px;
+  }
+
+section{
+	background-color: navy;
+	color: lightblue;
+	border-radius: 5px;
+	width: 95%;
+	margin: 2%;
+	padding: 5px 0 5px 5px;
+	float: left;
+}
+
+a{
+	color: white
+}
+
+a:hover{
+	color: lightblue;
+}
+
+a:active{
+	color: purple;
 }
