@@ -1,0 +1,103 @@
+<!doctype=html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Week 2 Technical</title>
+		<link rel="stylesheet" href="stylesheets/techblog.css">
+		<style type="text/css">
+			p.pos_fixed{
+				position: fixed;
+				background-color: white;
+				color: red;
+				top: 10px;
+				right: 40px;
+				padding: 1px;
+			}
+
+			p.pos_right{
+				position: relative;
+				left: 15px;
+				background-color: white;
+				color: red;
+				padding: 1px;
+			}
+
+			h2{
+				position: absolute;
+				left: 100px;
+				top: 70px;
+				background-color: white;
+				color: red;
+				padding: 2px;
+			}
+		</style>
+	</head>
+
+<body>
+	<header>
+		<h2>Week 2 Technical Blog</h2>
+		<nav>
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#fixed">Fixed Positioning</a>
+          </li>
+          <li>
+            <a href="#relative">Relative Positioning</a>
+          </li>
+          <li>
+            <a href="#absolute">Absolute Positioning</a>
+          </li>
+        </ul>
+      </nav>
+	</header>
+
+	<section>
+		<article id="fixed"><h3>Fixed Positioning</h3>
+			<p>	An element with fixed position is positioned relative to the browser window. It will not move even if the window is scrolled. It is also important to note that items with a fixed position are removed from the normal flow of the HTML. Other elements behave as though the fixed position element does not exist. And fixed positioned elements can overlap other elements.</p>
+			<p>	Up in the top right corner, you may notice some fixed position text. If you were to scroll this webpage (you have have to vertically shrink the page since there isn't much content), that content will not move. It will stay in its location. You have have visited websites that have banners across the top that don't move as you scroll. Another good example!</p>
+			<p>	Here is the syntax of that fixed position text:<br>
+				<strong><code>p.pos_fixed {<br>
+				position: fixed;<br>
+				background-color: white;<br>
+				color: red;<br>
+				top: 15px;<br>
+				right: 40px;<br>
+				padding: 1px;<br>
+			}</strong></code></p>
+			<p>	Then you just have to call the <code>pos_fixed</code> class on whatever p-tag you would like to fixate!</p>
+				<p class="pos_fixed"><strong>Example of Fixed Text</strong></p>
+		</article>
+
+		<article id="relative"><h3>Relative Positioning</h3>
+			<p>	An element with relative position is positioned according to where its normal location would have been.</p>
+			<p class="pos_right">For example, I used relative positioning to move this p-tag 15px to the right of where it would have sat normally.</p>
+			<p>	The CSS to do that is:<br>
+				<strong><code>p.pos_right{<br>
+				position: relative;<br>
+				left: 15px;<br>
+				background-color: white;<br>
+				color: red;<br>
+				padding: 1px;<br>
+			}</strong></code></p>
+			<p>	And like before, just call the <code>pos_right</code> class on whatever p-tags you would like to shift.</p>
+			<p>	As well as shifting left and right, you can also position elements in reference to top and bottom. But we must keep in mind that The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow. So if I move an element UP, the line where that text would have NORMALLY been will still be there as if the text was.</p>
+		</article>
+
+		<article id="absolute"><h3>Absolute Positioning</h3>
+			<p>	Absolute positioned elements are a mixed breed from Fixed and Relative. Like Fixed, they can be placed anywhere you would like on the page, but they are not fixed to that location relative to your browser window. And the document and other elements treat an absolute elements like it does not exist, and in that way it does not interrupt the normal flow of a page like Relative positioned items do.</p>
+			<p>	For this example, I chose to absolutely position my h2 tag left 100px and 70px from the top.</p>
+			<p><strong><code>h2{<br>
+				position: absolute;<br>
+				left: 100px;<br>
+				top: 70px;<br>
+				background-color: white;<br>
+				color: red;<br>
+				padding: 2px;<br>
+			}</code></strong></p>
+		</article>
+	</section>
+
+	<footer>&copy; Derek Johnson, 2014</footer>
+</body>
+</html>

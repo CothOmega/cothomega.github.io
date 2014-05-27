@@ -1,0 +1,43 @@
+<!doctype=html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TITLE</title>
+		<link rel="stylesheet" href="">
+	</head>
+
+<body>
+	<header>
+		<h2>HEADER</h2>
+		<nav>
+        <ul>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+          <li>
+            <a href="#"></a>
+          </li>
+        </ul>
+      </nav>
+	</header>
+
+	<section>
+		<article id=""><h3></h3>
+			
+		</article>
+
+		<article id=""><h3></h3>
+
+		</article>
+
+		<article id=""><h3></h3>
+
+		</article>
+	</section>
+
+	<footer>&copy; Derek Johnson, 2014</footer>
+</body>
+</html>
