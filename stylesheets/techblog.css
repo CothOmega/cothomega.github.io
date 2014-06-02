@@ -1,7 +1,6 @@
 body{
 	background-color: lightblue;
 	font-family: Helvetica, sans-serif;
-
 }
 
 header, footer{
@@ -41,6 +40,9 @@ article{
 h1, h2, h3, h4, h5, h6{
 	color: white;
 	text-decoration: underline;
+}
+h1{
+	text-align: center;
 }
 
 a{
