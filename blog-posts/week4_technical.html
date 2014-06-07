@@ -1,0 +1,45 @@
+<!doctype=html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Week 4 Technical Blog</title>
+		<link rel="stylesheet" href="../stylesheets/techblog.css">
+	</head>
+
+<body>
+	<header>
+		<h1>Week 4 Technical Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+<section>
+<h2>Ruby: Array vs Hash</h2>
+		<p>Arrays and hashes are actually very similar. Arrays are used to store collections of data. Each object in an array has an unique key assigned to it. We can access any object in the array using this unique key. The positions in an array starts from "0". The first element is located at "0", the second at 1st position etc.</p>
+		<p>Like arrays, Hashes are also used to store data. Hashes points an object to another object. Consider it like assigning a certain "meaning" to a string. Each time you refer that string, it refers its "meaning".</p>
+	<h3>Array Example</h3>
+		<code>classes = Array.new<br>
+		classes = %w[Priest, Paladin, Hunter, Warrior, Monk]</code>
+		<p>There are 4 elements in this array. Each with a position (0 = 1st, 1 = 2nd, etc).</p>
+		<code>puts classes[1]<br>
+		Paladin</code>
+		<p>Here is how you would add a new element to position 5:</p>
+		<code>classes[5] = "Death Knight"</code>
+	<h3>Hash Example</h3>
+		<code>bikes = Hash.new<br>
+		bikes = {<br>
+		'Bajaj' => 'Pulsar 220, Pulsar 200, Pulsar 180 and Pulsar 150',<br>
+		'Honda' => 'Unicorn, Shine and Splendor',<br>
+		'TVS' => 'Apache, Star City, and Victor'<br>
+		}</code>
+		<p><code>bikes['Bajaj']</code> returns "Pulsar 220, Pulsar 200, Pulsar 180, and Pulsar 150".</p>
+	<h3>Summary</h3>
+		<p>So we can see that theoretically, arrays and hashes can accomplish pretty much the same things but in slightly different ways. Their design makes arrays a bit better if you simply need to have items set out in an ordered set. Hashes are also 'ordered', but their strength lies in user-created ojects with values you can assign.</p>
+
+</section>
+
+<footer>&copy; Derek Johnson, 2014</footer>
+</body>
+</html>
