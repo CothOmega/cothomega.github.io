@@ -1,0 +1,61 @@
+<!doctype=html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Week 6 Technical Blog</title>
+		<link rel="stylesheet" href="../stylesheets/techblog.css">
+	</head>
+
+<body>
+	<header>
+		<h1>Week 6 Technical Blog</h1>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+<section>
+	<article>
+
+		<h2>Ruby Classes vs Modules</h2>
+			<p>Since this topic is going to be rather dense, I figured I would make a table to try and logically out all of the elements. Credit to <a href="http://stackoverflow.com/a/9778021">StackOverflow.com</a> for most of my research!</p>
+
+<table class="table_builder grid" width="500">
+<tr>
+<td class="coltitle cfirst rfirst" width="100" align="center"></td><td class="coltitle rfirst" width="200" align="center"><code>class</code></td><td class="coltitle clast rfirst" width="200" align="center"><code>module</code></td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">instantiation</td><td width="200">can be instantiated</td><td class="clast" width="200">can *not* be instantiated</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">usage</td><td width="200">object creation</td><td class="clast" width="200">mixin facility. provide a namespace.</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">superclass</td><td width="200">module</td><td class="clast" width="200">object</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">consists of...</td><td width="200">methods, constants, and variables</td><td class="clast" width="200">methods, constants, and classes</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">methods</td><td width="200">class methods, instance methods</td><td class="clast" width="200">module methods, instance methods</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">inheritance</td><td width="200">inherits behavior and can be base for inheritance</td><td class="clast" width="200">no inheritance</td>
+</tr>
+<tr>
+<td class="cfirst" width="100" align="center">inclusion</td><td width="200">cannot be included</td><td class="clast" width="200">can be included in classes and modules by using the <code>include</code> command (includes all instance mehtods as instance methods in class/module)</td>
+</tr>
+<tr>
+<td class="cfirst rlast" width="100" align="center">extension</td><td class="rlast" width="200">cannot extend with <code>extend</code> command (only with inheritance)</td><td class="clast rlast" width="200">module can extend instance by using <code>extend</code> command (extends given instance with singleton methods from module)</td>
+</tr>
+</table>
+
+			<p>Granted, there is a lot of information here that I haven't had much experience with, but I will surely be back here to review what I placed. Also <a href="https://lh4.googleusercontent.com/e_Eml6aYg1udItOLjQCzUKF1L2K1JcjyZTnzYwcP7A=w1530-h800-no">this image</a> seemed super detailed and helpful. But also huge. Give it a look!</p>
+
+	</article>
+</section>
+
+<footer>&copy; Derek Johnson, 2014</footer>
+</body>
+</html>
